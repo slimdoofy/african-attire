@@ -41,7 +41,7 @@
         http_response_code(500);
         echo "Error: Git pull failed.";
         // Log details securely on the server instead of printing them to the web
-        error_log("Git Webhook Failure: " . implode("\n", $output)); //
+        error_log("Git Webhook Failure: " . implode("\n", $output));
     }
 
 
