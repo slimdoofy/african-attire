@@ -8,5 +8,5 @@
     // Log output
     file_put_contents('deploy.log', implode("\n", $output));
 
-    echo "Deployment Successful!";
+    echo "Deployment Successful!"; //response
 ?>
