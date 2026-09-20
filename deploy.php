@@ -27,7 +27,8 @@
 
     // 2. Configuration
     $repo_path = '/home/daceuabp/public_html/www.shopafricanattire.com';
-    $git_bin   = '/usr/bin/git';
+    //$git_bin   = '/usr/bin/git';
+    $git_bin   = '/home/daceuabp/public_html/www.shopafricanattire.com/.git';
 
     // 3. Execution (The Git Pull Command)
     $command = "cd " . escapeshellarg($repo_path) . " && {$git_bin} pull origin main 2>&1";
@@ -41,7 +42,7 @@
         http_response_code(500);
         echo "Error: Git pull failed.";
         // Log details securely on the server instead of printing them to the web
-        error_log("Git Webhook Failure: " . implode("\n", $output)); 
+        error_log("Git Webhook Failure: " . implode("\n", $output)); //changes
     }
 
 
