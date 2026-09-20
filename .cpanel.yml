@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/daceuabp/public_html/www.shopafricanattire.com
+    - /bin/cp -R * $DEPLOYPATH
